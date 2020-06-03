@@ -38,7 +38,7 @@ export interface RegAndLogParams {
 // 验证码
 export interface VerifyCodeParams {
   codePhone: string | number;
-  verifyCode: string | number
+  verifyCode: string | number;
 }
 
 // 导航 nav
@@ -47,8 +47,6 @@ export interface NavListItem {
   path: string;
   name: string;
 }
-
-
 
 // 文章归档
 export interface ParamsArchive {
@@ -74,7 +72,6 @@ export interface ArchiveData {
   count: number;
   list: ArchiveList | any;
 }
-
 
 // 文章详情
 export interface OtherComments {
@@ -159,7 +156,6 @@ export interface ArticlesData {
   list: List | any;
 }
 
-
 // 留言
 export interface MessageParams {
   email: string;
@@ -178,7 +174,6 @@ export interface Rules {
   content: RulesItem[];
 }
 
-
 // 项目
 export interface ProjectList {
   content: string;
@@ -194,7 +189,6 @@ export interface ProjectsData {
   list: ProjectList | any;
 }
 
-
 // 历程
 export interface TimelineList {
   content: string;
@@ -208,7 +202,6 @@ export interface TimelinesData {
   count: number;
   list: TimelineList | any;
 }
-
 
 // 标签
 export interface TagList {

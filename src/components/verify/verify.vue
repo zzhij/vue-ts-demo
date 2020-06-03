@@ -18,7 +18,7 @@
   </div>
 </template>
 <script lang="ts">
-import { Component, Prop, Vue, Emit } from 'vue-property-decorator'
+import { Component, Vue, Emit } from 'vue-property-decorator'
 import { VerifyCodeParams } from '@/types/user'
 
 @Component
@@ -37,7 +37,7 @@ export default class VerifyCode extends Vue {
     ]
   }
 
-  private Codedisabled = false;
+  private Codedisabled: boolean = false;
   private sendCodeDisabled = false;
 
   private codeTime = 60;

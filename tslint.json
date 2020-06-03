@@ -1,0 +1,15 @@
+{
+  "linterOptions": {
+    "exclude": [
+      "node_modules/**"
+    ]
+  },
+  "rules": {
+    "no-inferrable-types": [
+      true,
+      "ignore-properties"
+    ],
+    "ignore-properties": 0,
+    "semi": ["error", "never"]
+  }
+}
