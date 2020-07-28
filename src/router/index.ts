@@ -1,13 +1,27 @@
 import Vue from 'vue'
 import VueRouter, { RouteConfig } from 'vue-router'
 import Home from '../views/Home.vue'
+import Layout from '@/layout/index.vue'
+
 Vue.use(VueRouter)
 
 const routes: Array<RouteConfig> = [
   {
     path: '/',
-    name: 'Home',
-    component: Home
+    component: Layout,
+    redirect: '/login',
+    children: [
+      {
+        path: 'login',
+        component: () => import(/* webpackChunkName: "login" */ '@/views/login/index.vue'),
+        name: 'login',
+        meta: {
+          title: 'login',
+          icon: 'login',
+          affix: true
+        }
+      }
+    ]
   },
   {
     path: '/module',

@@ -4,12 +4,12 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/module">组件</router-link>
     </div>
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
 <style lang="scss">
-#app {
+/* #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -28,5 +28,5 @@
       color: #42b983;
     }
   }
-}
+} */
 </style>
