@@ -38,6 +38,7 @@
 </template>
 <script lang="ts">
 import { Component, Vue, Watch, Emit } from 'vue-property-decorator'
+@Component({})
 export default class Nav extends Vue {
   private visible: boolean = false;
   private handleFlag = '';

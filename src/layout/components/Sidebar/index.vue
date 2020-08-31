@@ -46,11 +46,13 @@ export default class extends Vue {
   }
 
   get routes () {
-    return ''
+    console.log(this.$router)
+    const routers = this.$router.options.routes[0].children // this.$router.options 在ts中会报错 可以使用this.$router['options']来解决  通过查找资料 知道是 $router.options 是一个私人的api 没有包括在 typings
+    return routers
   }
 
   get showLogo () {
-    return ''
+    return true
   }
 
   get menuActiveTextColor () {
@@ -72,7 +74,7 @@ export default class extends Vue {
   }
 
   get isCollapse () {
-    return ''
+    return false
   }
 }
 </script>

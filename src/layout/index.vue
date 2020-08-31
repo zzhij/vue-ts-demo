@@ -23,7 +23,7 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import { mixins } from 'vue-class-component'
+/* import { mixins } from 'vue-class-component' */
 import { AppMain, Navbar, Sidebar } from './components'
 
 @Component({
@@ -57,6 +57,7 @@ export default class extends Vue {
   }
 
   private handleClickOutside () {
+    console.log('打印')
   }
 }
 </script>

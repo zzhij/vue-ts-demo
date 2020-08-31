@@ -61,6 +61,7 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
+import { UserModule } from '@/store/modules/user'
 
 @Component({
   name: 'Navbar',
@@ -77,13 +78,15 @@ export default class extends Vue {
   }
 
   get avatar () {
-    return ''
+    return UserModule.avatar
   }
 
   private toggleSideBar () {
+    console.log('toggleSideBar')
   }
 
   private async logout () {
+    console.log('logout')
   }
 }
 </script>

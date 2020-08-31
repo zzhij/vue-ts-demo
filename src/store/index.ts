@@ -1,9 +1,15 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-
+import { IUserState } from './modules/user'
 Vue.use(Vuex)
 
-export default new Vuex.Store({
+export interface IRootState {
+  user: IUserState;
+}
+
+export default new Vuex.Store<IRootState>({})
+
+/* export default new Vuex.Store({
   state: {
   },
   mutations: {
@@ -13,3 +19,4 @@ export default new Vuex.Store({
   modules: {
   }
 })
+ */

@@ -108,6 +108,7 @@ export default class extends Vue {
     }
     // If there is no children, return itself with path removed,
     // because this.basePath already conatins item's path information
+    console.log({ ...this.item, path: '' })
     return { ...this.item, path: '' }
   }
 
